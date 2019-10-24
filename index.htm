@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Bitcoin Cash Standards | An overview of standards in Bitcoin Cash</title>
+        <meta name="description" content="A brief overview of common standards in Bitcoin Cash: ticker symbol, currency code, units, logo, fees, formats">
+        <meta name="author" content="Georg Engelmann">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:url" content="https://bitcoincashstandards.org">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Bitcoin Cash Standards | An Overview of Standards in Bitcoin Cash">
+        <meta property="og:description" content="A brief overview of common standards in Bitcoin Cash: ticker symbol, currency code, units, logo, fees, formats, protocols">
+        <meta property="og:image" content="images/bitcoin-cash-logo.png">
+        <meta name="msapplication-TileColor" content="#49c94d">
+        <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#49c94d">
+        <base href="https://bitcoincashstandards.org">
+        <link href="style/main.css" rel="stylesheet">
+        <link href="images/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+        <link href="images/favicon/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+        <link href="images/favicon/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+        <link href="images/favicon/site.webmanifest" rel="manifest">
+        <link href="images/favicon/favicon.ico" rel="shortcut icon">
+    </head>
+    <body>
+        <header>
+            <h1>Bitcoin Cash Standards</h1>
+            <h2>An overview of standards in Bitcoin Cash</h2>
+        </header>
+        <main>
+            <article>
+                <h3>Ticker symbol &amp; currency code</h3>
+                <p>
+                    The ticker symbol and <span lang="la">de facto</span> currency code for Bitcoin Cash is: <abbr title="Bitcoin Cash">BCH</abbr>.<br>
+                    <abbr title="Bitcoin Cash">BCH</abbr> is not compatible with <a href="https://www.iso.org/iso-4217-currency-codes.html" rel="external" title="ISO 4217 Currency codes">ISO 4217</a>,
+                    and while XBC is in conflict with <a href="https://en.wikipedia.org/wiki/European_Unit_of_Account" rel="external" title="European Unit of Account - Wikipedia">European Unit of Account 9</a>, <abbr title="Bitcoin Cash">BCH</abbr> is already widely adopted and accepted as a "standard".<br>
+                    A request has been submitted to <a href="https://www.currency-iso.org/en/home.html" rel="external" title="Currency Code Services - ISO 4217 Maintenance Agency">ISO 4217 Maintenance Agency</a> to recognize XCH as a currency code for Bitcoin Cash on <time datetime="2019-10-11 20:00">October 11, 2019</time>.
+                </p>
+            </article>
+
+            <article>
+                <h3>Units</h3>
+                <p>
+                    <abbr title="Bitcoin Cash">BCH</abbr> is a standard in practice, but no formal agency for units is in place.
+                </p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Abbreviation</th>
+                            <th>Unit</th>
+                            <th>Fraction (<abbr title="Bitcoin Cash">BCH</abbr>)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Abbreviation"><abbr title="Bitcoin Cash">BCH</abbr></td>
+                            <td data-label="Unit">bitcoin-cash</td>
+                            <td data-label="Fraction">1</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Abbreviation">mBCH</td>
+                            <td data-label="Unit">milli-bitcoin-cash</td>
+                            <td data-label="Fraction">0.001</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Abbreviation">sat <em>(plural: sats)</em></td>
+                            <td data-label="Unit">satoshi <em>(plural: satoshis)</em></td>
+                            <td data-label="Fraction">0.000 00001</td>
+                        </tr>
+                    <tbody>
+                </table>
+            </article>
+
+            <article>
+                <h3>Logo</h3>
+                <p>
+                    There is no official logo or color scheme for Bitcoin Cash, however <a href="https://www.bitcoincash.org/graphics.html" rel="external" title="Logos / Graphics - Bitcoin Cash">bitcoincash.org</a> currently recommends an orange logo (<abbr title="HyperText Markup Language">HTML</abbr> color: #f7941d) inside a rectangle. The Bitcoin logo is tilted -20 degrees (instead of +20 degrees Bitcoin Core uses). Many major companies are using a light green logo (<abbr title="HyperText Markup Language">HTML</abbr> color: #8dc351 and #99c262). Examples:
+                </p>
+                <picture>
+                    <img src="images/bitcoin-cash-logo-orange.png" alt="Orange Bitcoin Cash logo">
+                </picture>
+                <a href="images/bitcoin-cash-logo.svg" title="Light green Bitcoin Cash logo" download>
+                    <picture>
+                        <img src="images/bitcoin-cash-logo.png" alt="Light green Bitcoin Cash logo">
+                    </picture>
+                </a>
+            </article>
+
+            <article>
+                <h3>Transaction fees</h3>
+                <p>
+                    Transaction fees are not standardized, but the recommended and most widely used transaction fee setting is 1 sat/byte (one satoshi per byte).
+                </p>
+            </article>
+
+            <article>
+                <h3>URI scheme</h3>
+
+                <p>
+                    The <abbr title="Uniform Resource Identifier">URI</abbr> Scheme syntax for Bitcoin Cash is:<br>
+                    Syntax: <code>bitcoincash:&#x3C;address&#x3E;[?[amount=&#x3C;size&#x3E;][&#x26;][label=&#x3C;label&#x3E;][&#x26;][message=&#x3C;message&#x3E;]]</code><br>
+                    Sample: <samp><a href="bitcoincash:qze75dks3vtgr3ezeg0jgkmezl2ttvpylyrk26dlsq?amount=0.02&label=URI%20Scheme%20Test" title="Bitcoin Cash URI Scheme Test">bitcoincash:qze75dks3vtgr3ezeg0jgkmezl2ttvpylyrk26dlsq?amount=0.02&label=URI%20Scheme%20Test</a></samp><br>
+                    <a href="https://www.iana.org/assignments/uri-schemes/prov/bitcoincash" rel="external" title="IANA assignment for Bitcoin Cash URI Scheme">IANA assignment</a>
+                    <br><br>
+                    The <abbr title="Uniform Resource Identifier">URI</abbr> Scheme syntax for <abbr title="Simple Ledger Protocol">SLP</abbr> tokens on the Bitcoin Cash blockchain is:<br>
+                    Syntax: <code>simpleledger:address?field1=param1&field2=param2</code><br />
+                    Sample: <samp><a href="simpleledger:qze75dks3vtgr3ezeg0jgkmezl2ttvpyly0dppclw7" title="Simple Ledger Protocol URI Scheme Test">simpleledger:qze75dks3vtgr3ezeg0jgkmezl2ttvpyly0dppclw7</a></samp><br>
+                    <a href="https://www.iana.org/assignments/uri-schemes/prov/simpleledger" rel="external" title="IANA assignment for Simple Ledger Protocol URI Scheme">IANA assignment</a>
+                    <br><br>
+                    A proposal for a <abbr title="Uniform Resource Identifier">URI</abbr> Scheme for Cash Accounts exists, but there is no official <abbr title="Internet Assigned Numbers Authority
+">IANA</abbr> assignment. The syntax is similar to the bitcoincash URI Scheme.<br>
+                    Syntax: <code>cashacct:&#x3C;cashaccount&#x3E;[?[amount=&#x3C;size&#x3E;][&#x26;][label=&#x3C;label&#x3E;][&#x26;][message=&#x3C;message&#x3E;]]</code><br>
+                    Sample: <samp><a href="cashacct:GeorgEngelmann#17216?amount=0.001&label=0.001%20BCH%20for%20Georg%20Engelmann" title="Cash Accounts URI Scheme">cashacct:GeorgEngelmann#17216?amount=0.001&label=0.001%20BCH%20for%20Georg%20Engelmann</a></samp>
+                    <br><br>
+                    Non-standard parameters such as <code>op_return</code> and <code>op_return_raw</code> have been implemented in <a href="https://electroncash.org" title="Electron Cash: A Bitcoin Cash SPV Wallet">Electron Cash</a> and other wallets.
+                </p>
+            </article>
+
+            <article>
+                <h3>CashAddr format</h3>
+                <p>
+                    The <abbr title="Cash Address">CashAddr</abbr> format is the standard address format for Bitcoin Cash addresses. <abbr title="Cash Address">CashAddr</abbr> was created to avoid confusion. Some wallets use the <abbr title="Cash Address">CashAddr</abbr> format while others use the Legacy format.<br>
+                    The specification is available on <a href="https://github.com/bitcoincashorg/bitcoincash.org/blob/master/spec/cashaddr.md" rel="external" title="Specification for CashAddr format">GitHub</a>.
+                </p>
+            </article>
+
+            <article>
+                <h3>Payment requests</h3>
+                <p>
+                    Payment Requests are requests for specific amounts typically used in merchant transactions.<br>
+                    The specification is available on <a href="https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki" title="Specification for BIP70">GitHub</a>.
+                </p>
+            </article>
+
+            <article>
+            <h3>Cash Accounts</h3>
+                <p>
+                    Cash Accounts are used to attach a human readable name to Bitcoin Cash addresses. The Cash Accounts specification is available on 
+                    <a href="https://gitlab.com/cash-accounts/specification/blob/master/SPECIFICATION.md" rel="external" title="Specification for Cash Accounts">GitLab</a>.<br>
+                    For more information about Cash Accounts visit <a href="https://www.cashaccount.info" rel="external" title="Cash Accounts">cashaccount.info</a>.
+                </p>
+            </article>
+
+            <article>
+                <h3>CashShuffle</h3>
+                <p>
+                    CashShuffle is a fully decentralized privacy enhancing protocol for Bitcoin Cash. The CashShuffle specification is available on <a href="https://github.com/cashshuffle/spec/blob/master/SPECIFICATION.md" rel="external" title="Specification for CashShuffle">GitHub</a>.<br>
+                    For more information about CashShuffle visit <a href="https://cashshuffle.com" rel="external" title="CashShuffle - Privacy For Bitcoin Cash">cashshuffle.com</a>.
+                </p>
+            </article>
+
+            <article>
+                <h3>Simple Ledger Protocol</h3>
+                <p>
+                    Simple Ledger Protocol (<abbr title="Simple Ledger Protocol">SLP</abbr>) is a simple token system. It is comparable with Ethereum's <a href="https://eips.ethereum.org/EIPS/eip-20" rel="external"  title="ERC-20 Token Standard | Ethereum Improvement Proposals">ERC-20 Token Standard</a> and provides greater integrity and transparency than traditional forms of asset accounting and trading. Anyone can use <abbr title="Simple Ledger Protocol">SLP</abbr> to create their own token on the Bitcoin Cash blockchain. The specifications are available on GitHub for <a href="https://github.com/simpleledger/slp-specifications/blob/master/slp-token-type-1.md" rel="external" title="Specification for Simple Ledger Protocol">SLP Type 1</a> and <a href="https://github.com/simpleledger/slp-specifications/blob/master/slp-nft-1.md" rel="external" title="Specification for Simple Ledger Protocol - Non-Fungible Tokens">SLP NFT Type 1</a>.<br>
+                    For more information about Simple Ledger Protocol visit <a href="https://simpleledger.cash" rel="external" title="Simple Ledger Protocol: A Simple Token System For Bitcoin Cash">simpleledger.cash</a>.
+                </p>
+            </article>
+
+            <article>
+                <h3>Memo protocol</h3>
+                <p>
+                    Memo protocol is a protocol for sending messages/attaching text on the Bitcoin Cash blockchain.<br>
+                    The protocol specification is available on <a href="https://memo.cash/protocol" rel="external" title="Specification for Memo protocol">memo.cash</a>.<br>Additional protocol codes have been implemented by <a href="https://memberapp.github.io/" rel="external" title="Member App">Member</a> and are available on <a href="https://github.com/memberapp/protocol" rel="external" title="Specification for Memo protocol with Member codes">GitHub</a>.
+                </p>
+            </article>
+            <article>
+                <h3>CashScript</h3>
+                <p>
+                    CashScript is a high level language enabling basic smart contract functionality on Bitcoin Cash. While these cash contracts are less powerful than Ethereum's smart contracts, CashScript was in many ways inspired by Ethereum's development ecosystem. Ethereum has always had one of the most accessible development ecosystems in terms of tooling, and with CashScript we want to bring that accessibility to Bitcoin Cash.<br>
+                    The CashScript documentation is available on <a href="https://developer.bitcoin.com/cashscript/docs/language" rel="external" title="CashScript Documentation">developer.bitcoin.com</a>.
+                </p>
+            </article>
+            <article>
+                <h3>CashID</h3>
+                <p>
+                    CashID is an open protocol that allows secure authentication based on the public key cryptography infrastructure that is currently present in the Bitcoin Cash ecosystem.<br>
+                    The CashID specification is available on <a href="https://gitlab.com/cashid/protocol-specification" rel="external" title="Specification for CashID">GitLab</a>.
+                </p>
+            </article>
+        </main>
+        <footer>
+            <nav>
+                <a accesskey="0" href="definitions.htm" title="Bitcoin Cash Standards | Definitions">Definitions</a> 
+                <a accesskey="9" href="&#77;&#97;&#105;&#76;&#84;&#111;&#58;&#37;&#54;&#55;&#37;&#54;&#53;&#37;&#54;&#102;&#37;&#55;&#50;&#37;&#54;&#55;&#37;&#52;&#48;&#37;&#54;&#50;&#37;&#54;&#51;&#37;&#54;&#56;&#37;&#54;&#55;&#37;&#54;&#49;&#37;&#54;&#101;&#37;&#54;&#55;&#37;&#50;&#101;&#37;&#54;&#102;&#37;&#55;&#50;&#37;&#54;&#55;&#63;&#115;&#117;&#98;&#106;&#101;&#99;&#116;&#61;&#98;&#105;&#116;&#99;&#111;&#105;&#110;&#99;&#97;&#115;&#104;&#115;&#116;&#97;&#110;&#100;&#97;&#114;&#100;&#115;&#46;&#111;&#114;&#103;" title="Email contact for bitcoincashstandards.org">Contact</a>
+                <a accesskey="t" href="#" title="Jump to the top">&#11014;&#65039; Back to top</a>
+            </nav>
+        </footer>
+    </body>
+</html>

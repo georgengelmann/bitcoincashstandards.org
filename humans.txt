@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible
+
+    Georg Engelmann -- @georg_engelmann
+
+# THANKS
+
+    Jonathan Silverblood -- @monstarbitar
+    Josh Ellithorpe -- @zquestz
+    brianxv -- @brianxv15
+    imaginary_username -- @im_uname
+    11 -- https://memo.cash/profile/18DGcKR4asn3N3GZHXCXrnbdKNQwDJ16or
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
