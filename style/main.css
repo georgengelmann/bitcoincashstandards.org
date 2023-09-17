@@ -177,7 +177,7 @@ body {
 }
 header {
     color: #fff;
-    background-color: #49C94D;
+    background-color: #0AC18E;
     text-align:center;
     padding: 60px 0 30px;
 }
@@ -242,12 +242,12 @@ nav {
 nav a {
     margin-bottom: 12px;
     line-height: 200%;
-    color: #49C94D;
+    color: #0AC18E;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     flex:1;
-    border: 1px solid #49C94D;
+    border: 1px solid #0AC18E;
     border-radius: 2px;
     width:80%;
 }
@@ -257,6 +257,11 @@ nav a:hover {
     background-color: #369339;
     border: 1px solid transparent;
 }
+.hiddenlink {
+    position: absolute;
+    top: -250px;
+    left: -250px;
+}	
 @media screen and (min-width: 992px){
     nav {
         width: 80%;
@@ -273,7 +278,7 @@ nav a:hover {
    }
 }
 a {
-    color: #49C94D;
+    color: #0AC18E;
     text-decoration: none;
     transition:all .3s ease-in-out;
 }
@@ -371,7 +376,7 @@ main article{
     margin: 24px 24px 0;
     display: block;
     padding-bottom: 28px;
-    border-bottom: 1px solid rgba(0,0,0,.12);
+    /*border-bottom: 1px solid rgba(0,0,0,.12);*/
 }
 @media screen and (min-width: 992px){
     header, main, footer {
@@ -387,7 +392,7 @@ main article{
         margin: 24px 48px 0;
         display: inline-block;
         padding-bottom: 64px;
-        border-bottom: 1px solid rgba(0,0,0,.12);
+        /*border-bottom: 1px solid rgba(0,0,0,.12)*/
    }
     main article:first-of-type{
         margin-top: 48px;
@@ -397,12 +402,14 @@ main article{
    }
     footer {
         margin: 0 auto 120px;
-        border-radius: 0 0 12px 12px 
+        border-radius: 0 0 12px 12px; 
    }
 }
 @media print {
     footer {
-        display: none 
+        display: none; 
    }
+    main article, p, h3 {
+		page-break-inside: avoid !important;
+	}
 }
-
